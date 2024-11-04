@@ -117,9 +117,7 @@ ul li {
   height: 38px;
   font-size: 18px;
 }
-.sort-up {
-  display: none;
-}
+
 .delete-todo {
   border-radius: 100%;
 }
@@ -130,4 +128,7 @@ ul li {
   path {
     stroke: white;
   }
+}
+.error {
+  color: red;
 }
