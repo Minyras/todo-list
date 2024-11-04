@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>To-do list</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="to-do-list">
+        <div class="line"></div>
+        <div class="add-to-do">
+          <h1>To-do list</h1>
+          <svg
+            class="sort sort-down"
+            width="25"
+            height="15"
+            viewBox="0 0 25 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="2.5" width="2.5" height="12.5" fill="#C4C4C4" />
+            <rect
+              x="10"
+              y="3.75"
+              width="2.5"
+              height="7.5"
+              transform="rotate(-90 10 3.75)"
+              fill="#C4C4C4"
+            />
+            <rect
+              x="10"
+              y="8.75"
+              width="2.5"
+              height="10"
+              transform="rotate(-90 10 8.75)"
+              fill="#C4C4C4"
+            />
+            <rect
+              x="10"
+              y="13.75"
+              width="2.5"
+              height="15"
+              transform="rotate(-90 10 13.75)"
+              fill="#C4C4C4"
+            />
+            <path
+              d="M3.75 15L0.502405 10.3125L6.9976 10.3125L3.75 15Z"
+              fill="#C4C4C4"
+            />
+          </svg>
+          <svg
+            class="sort sort-up"
+            width="25"
+            height="15"
+            viewBox="0 0 25 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="5"
+              y="15"
+              width="2.5"
+              height="12.5"
+              transform="rotate(-180 5 15)"
+              fill="#C4C4C4"
+            />
+            <rect
+              x="10"
+              y="3.75"
+              width="2.5"
+              height="7.5"
+              transform="rotate(-90 10 3.75)"
+              fill="#C4C4C4"
+            />
+            <rect
+              x="10"
+              y="8.75"
+              width="2.5"
+              height="10"
+              transform="rotate(-90 10 8.75)"
+              fill="#C4C4C4"
+            />
+            <rect
+              x="10"
+              y="13.75"
+              width="2.5"
+              height="15"
+              transform="rotate(-90 10 13.75)"
+              fill="#C4C4C4"
+            />
+            <path
+              d="M3.75 6.55671e-07L6.99759 4.6875L0.502404 4.6875L3.75 6.55671e-07Z"
+              fill="#C4C4C4"
+            />
+          </svg>
+          <form action="">
+            <div class="input">
+              <input type="text" />
+              <img class="delete" src="./assets/svg/delete.svg" alt="" />
+            </div>
+            <div class="todos"></div>
+            <div class="add-button">
+              <button class="plus">+</button>
+              <button class="button" type="button">Add</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
