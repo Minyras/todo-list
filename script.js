@@ -8,8 +8,12 @@ let sortUpIcon = document.querySelector(".sort-up");
 let error = document.querySelector(".error");
 sortUpIcon.style.display = "none";
 
+let addButton = document.querySelector(".button");
+addButton.disabled = true;
+
 deleteIcon.addEventListener("click", () => {
   inputContainer.style.display = "none";
+  addButton.disabled = true;
   if (todoss.length > 0) {
     todos.style.display = "block";
   }
@@ -18,6 +22,7 @@ deleteIcon.addEventListener("click", () => {
 plusIcon.addEventListener("click", (e) => {
   inputContainer.style.display = "block";
   todos.style.display = "none";
+  addButton.disabled = false;
   e.preventDefault();
 });
 
@@ -65,6 +70,7 @@ class List {
       this.displayTodos();
       inputContainer.style.display = "none";
       todos.style.display = "block";
+      addButton.disabled = true;
       todos.style.boxShadow = "0px 0px 5px 0px green";
       todos.style.transition = "0.5s ease-in-out";
       error.textContent = "";
@@ -163,7 +169,7 @@ class List {
 
   handleDragOver = (e) => {
     e.preventDefault();
-    e.target.style.border = "1px dashed #333";
+    e.target.style.border = "1px dashed #FFDC40";
   };
 
   handleDrop = (e) => {
